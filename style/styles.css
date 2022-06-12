@@ -467,3 +467,29 @@ display: flex;
 flex-direction: column;
 align-items: center;
 }
+.juguetes:hover{
+    transform:scale(4)
+}
+.juguetes{
+    transition: all 3s
+}
+.imagenPagina:hover{
+    animation: imagenPagina 5s ;
+}
+@keyframes imagenPagina{
+    0%{
+        transform: scale(3);
+    }
+    20%{
+        border-radius: 50%;
+    }
+    40%{
+        transform: rotate(90deg);
+    }
+    60%{
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateY(50px);
+    }
+}
