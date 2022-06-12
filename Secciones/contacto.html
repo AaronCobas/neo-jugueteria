@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/styles.css">
+    <title>Document</title>
+</head>
+<body class="bodyContacto">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../Secciones/contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="../Secciones/categorías.html">Categorías</a>
+                </li>
+                <li>
+                    <a href="../Secciones/mis_compras.html">Mis compras</a>
+                </li>
+                <li>
+                    <a href="../Secciones/ofertas.html">Ofertas</a>
+                </li>
+                <li><a href="../Secciones/sobre_nosotros.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form class="formPadre" action="#"> 
+        <div class="formularioNombre">
+            <label for="Nombre">¿Cómo te llamás?</label>
+            <input type="text" placeholder="Tu nombre">
+            </div>
+        <div class="formularioEmail">
+            <label class="Correo" for="Email">Tu correo electrónico:
+            <input type="email" placeholder="juguetería@gmail.com" name="email">
+            </label>
+        </div>
+        <div class="formularioConsulta">
+        <label class="Consulta" for="Consulta">Tu consulta:
+            <textarea placeholder="Consulta"></textarea>
+        </label>
+        </div>
+        <div class="forumularioEdad">
+            <label for="Edad">¿Cuántos años tenés?
+        <input type="number" placeholder="Tu edad">
+        </label>
+        </div>
+        <div class="formularioJuguetes">
+            <p class="Formulario">Tu consulta trata sobre juguetes para...</p>
+            <div>Niños
+                <input type="radio" name="edad" id="niños">
+            </div>
+            <div>Bebés
+                <input type="radio" name="edad" id="bebes">
+            </div>
+        </div>
+        <div class="formularioMarca">
+        <p class="Formulario">Marca del juguete</p>
+        <select name="marca" id="marca">
+            <option value="Lego">Lego</option>
+            <option value="Hot Wheels">Hot Wheels</option>
+            <option value="Barbie">Barbie</option>
+            <option value="Nerf">Nerf</option>
+            <option value="Hasbro">Hasbro</option>
+        </select>
+        </div>
+        <div class="formularioNotificacion">
+            ¿Querés recibir notificaciones en tu correo electrónico?
+            <input type="checkbox" name="acepta" value="1">
+            </div>
+            <div class="formularioEnviar">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar todo">
+            </div>
+            </form>
+    <footer class="footerInicio" id="Instagram">
+        <a href="https://instagram.com">
+            <img src="https://img.icons8.com/office/16/000000/instagram-new.png"/>
+        </a>
+    </footer>
+</body>
+</html>
