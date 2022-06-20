@@ -108,18 +108,6 @@ p{
 }
 @media (min-width:600px){
     .bodyInicio{
-        display: grid;
-        grid-template-areas:
-        "header bienvenida bienvenida"
-        "header fotoJ fotoJ"
-        "header fotoJ fotoJ"
-        "header textoR textoR"
-        "header textoR textoR"
-        "fotoM fotoM fotoM"
-        "fotoM fotoM fotoM"
-        "videoJ videoJ videoJ"
-        "videoJ videoJ videoJ"
-        "footer footer footer";
         grid-template-columns: 150px 235px 235px;
         grid-template-rows: 200px 200px 200px 175px 175px 200px 200px 200px 200px auto;
     }
@@ -132,73 +120,32 @@ p{
         margin: 5px;
     }
     .formPadre{
-        display: grid;
-        grid-template-areas:
-        "formNombre formNombre"
-        "formEmail formEmail"
-        "formConsulta formConsulta"
-        "formEdad formEdad"
-        "formMarca formJuguetes"
-        "formNotif formNotif"
-        "formEnviar formEnviar";
         grid-template-columns: 225px 225px;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
     .bodyContacto{
-        display: grid;
-        grid-template-areas:
-        "header formP"
-        "footer footer";
         grid-template-columns: 140px auto;
         grid-template-rows: auto;
     }
     .bodyCategorías{
-        display: grid;
-        grid-template-areas:
-        "header listaJ"
-        "footer footer";
         grid-template-columns: 140px auto;
         grid-template-rows: 600px auto;
     }
     .bodyCompras{
-        display: grid;
-        grid-template-areas:
-        "header listaC"
-        "footer footer";
         grid-template-columns: 140px auto;
         grid-template-rows: 600px auto;
     }
     .bodyOfertas{
-        display: grid;
-        grid-template-areas:
-        "header listaO"
-        "footer footer";
         grid-template-columns: 140px auto;
         grid-template-rows: 600px auto;
     }
     .bodyNosotros{
-        display: grid;
-        grid-template-areas:
-        "header textoSN"
-        "footer footer";
         grid-template-columns: 140px auto;
         grid-template-rows: 600px auto;
     }
 }
 @media (min-width:1024px){
         .bodyInicio{
-            display: grid;
-            grid-template-areas:
-            "header bienvenida bienvenida"
-            "header fotoJ fotoJ"
-            "header fotoJ fotoJ"
-            "header textoR textoR"
-            "header textoR textoR"
-            "fotoM fotoM fotoM"
-            "fotoM fotoM fotoM"
-            "videoJ videoJ videoJ"
-            "videoJ videoJ videoJ"
-            "footer footer footer";
             grid-template-columns: 150px 1fr 1fr;
             grid-template-rows: 200px 200px 200px 100px 100px 200px 200px 200px 200px auto;
         }
@@ -211,59 +158,48 @@ p{
             border-color: indigo;
         }
         .formPadre{
-            display: grid;
-            grid-template-areas:
-            "formNombre formNombre"
-            "formEmail formEmail"
-            "formConsulta formConsulta"
-            "formEdad formEdad"
-            "formMarca formJuguetes"
-            "formNotif formNotif"
-            "formEnviar formEnviar";
             grid-template-columns: 150px auto;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         }
         .bodyContacto{
-            display: grid;
-            grid-template-areas:
-            "header formP"
-            "footer footer";
             grid-template-columns: 150px auto;
             grid-template-rows: auto;
         }
         .bodyCategorías{
-            display: grid;
-            grid-template-areas:
-            "header listaJ"
-            "footer footer";
             grid-template-columns: 150px auto;
             grid-template-rows: 800px auto;
         }
         .bodyCompras{
-            display: grid;
-            grid-template-areas:
-            "header listaC"
-            "footer footer";
             grid-template-columns: 150px auto;
             grid-template-rows: 800px auto;
         }
         .bodyOfertas{
-            display: grid;
-            grid-template-areas:
-            "header listaO"
-            "footer footer";
             grid-template-columns: 150px auto;
             grid-template-rows: 800px auto;
         }
         .bodyNosotros{
-            display: grid;
-            grid-template-areas:
-            "header textoSN"
-            "footer footer";
             grid-template-columns: 150px auto;
             grid-template-rows: 800px auto;
         }
     }
+@media (max-width: 1000px) and (min-width: 700px){
+    .textoEspecifico{
+        color: green;
+    }
+}
+.textoEspecifico{
+    font-size: larger;
+}
+a:hover{
+    background-color: darkorange;
+    color: chartreuse;
+}
+a:active{
+    color: black;
+}
+a:visited{
+    color: blueviolet;
+}
 .textoSN{
     background-color: aqua;
     padding: 20px;
