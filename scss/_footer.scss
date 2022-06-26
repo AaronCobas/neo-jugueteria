@@ -1,0 +1,10 @@
+footer{
+    border-style: solid;
+border-color: black;
+border-width: 10px;
+    background-color: wheat;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}

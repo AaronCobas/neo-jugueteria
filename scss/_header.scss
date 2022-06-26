@@ -1,0 +1,16 @@
+nav{
+    li{
+        display: inline-block;
+    }
+    }
+header{
+        background-color: aqua;
+        padding: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 10px;
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }

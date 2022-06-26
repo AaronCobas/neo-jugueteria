@@ -1,0 +1,166 @@
+@media (min-width:480px){
+.bodyInicio{
+    display: grid;
+    grid-template-areas:
+    "header bienvenida bienvenida"
+    "header fotoJ fotoJ"
+    "header fotoJ fotoJ"
+    "header textoR textoR"
+    "header textoR textoR"
+    "fotoM fotoM fotoM"
+    "fotoM fotoM fotoM"
+    "videoJ videoJ videoJ"
+    "videoJ videoJ videoJ"
+    "footer footer footer";
+    grid-template-columns: 130px 175px 175px;
+    grid-template-rows: 200px 200px 200px 300px 300px 200px 200px 200px 200px auto;
+}
+img{
+    max-width: 300px;
+    max-height: 300px;
+}
+figcaption{
+    background-color:darkslategrey;
+}
+iframe{
+    max-width: 400px;
+    max-height: 300px;
+}
+.textoRelleno{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+p{
+    margin: 20px;
+}
+.formPadre{
+    display: grid;
+    grid-template-areas:
+    "formNombre formNombre"
+    "formEmail formEmail"
+    "formConsulta formConsulta"
+    "formEdad formEdad"
+    "formMarca formJuguetes"
+    "formNotif formNotif"
+    "formEnviar formEnviar";
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.bodyContacto{
+    display: grid;
+    grid-template-areas:
+    "header formP"
+    "footer footer";
+    grid-template-columns: 130px auto;
+    grid-template-rows: auto;
+}
+.bodyCategorías{
+    display: grid;
+    grid-template-areas:
+    "header listaJ"
+    "footer footer";
+    grid-template-columns: 130px auto;
+    grid-template-rows: 500px auto;
+}
+.bodyCompras{
+    display: grid;
+    grid-template-areas:
+    "header listaC"
+    "footer footer";
+    grid-template-columns: 130px auto;
+    grid-template-rows: 500px auto;
+}
+.bodyOfertas{
+    display: grid;
+    grid-template-areas:
+    "header listaO"
+    "footer footer";
+    grid-template-columns: 130px auto;
+    grid-template-rows: 500px auto;
+}
+.bodyNosotros{
+    display: grid;
+    grid-template-areas:
+    "header textoSN"
+    "footer footer";
+    grid-template-columns: 130px auto;
+    grid-template-rows: 500px auto;
+}
+}
+@media (min-width:600px){
+    .bodyInicio{
+        grid-template-columns: 150px 235px 235px;
+        grid-template-rows: 200px 200px 200px 175px 175px 200px 200px 200px 200px auto;
+    }
+    .imagenPagina,.juguetes{
+        border: 20px;
+        border-color: aqua;
+        border-style: groove;
+    }
+    p{
+        margin: 5px;
+    }
+    .formPadre{
+        grid-template-columns: 225px 225px;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .bodyContacto{
+        grid-template-columns: 140px auto;
+        grid-template-rows: auto;
+    }
+    .bodyCategorías{
+        grid-template-columns: 140px auto;
+        grid-template-rows: 600px auto;
+    }
+    .bodyCompras{
+        grid-template-columns: 140px auto;
+        grid-template-rows: 600px auto;
+    }
+    .bodyOfertas{
+        grid-template-columns: 140px auto;
+        grid-template-rows: 600px auto;
+    }
+    .bodyNosotros{
+        grid-template-columns: 140px auto;
+        grid-template-rows: 600px auto;
+    }
+}
+@media (min-width:1024px){
+        .bodyInicio{
+            grid-template-columns: 150px 1fr 1fr;
+            grid-template-rows: 200px 200px 200px 100px 100px 200px 200px 200px 200px auto;
+        }
+        p{
+            margin: 3px;
+        }
+        .pawPatrol{
+            border: 5px;
+            border-style: dotted;
+            border-color: indigo;
+        }
+        .formPadre{
+            grid-template-columns: 150px auto;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .bodyContacto{
+            grid-template-columns: 150px auto;
+            grid-template-rows: auto;
+        }
+        .bodyCategorías{
+            grid-template-columns: 150px auto;
+            grid-template-rows: 800px auto;
+        }
+        .bodyCompras{
+            grid-template-columns: 150px auto;
+            grid-template-rows: 800px auto;
+        }
+        .bodyOfertas{
+            grid-template-columns: 150px auto;
+            grid-template-rows: 800px auto;
+        }
+        .bodyNosotros{
+            grid-template-columns: 150px auto;
+            grid-template-rows: 800px auto;
+        }
+    }
