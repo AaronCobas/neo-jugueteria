@@ -80,3 +80,12 @@ align-items: center;
         transform: translateY(50px);
     }
 }
+@each $parrafo, $color in $parrafos {
+    .p--#{$parrafo}{
+        color: $color;
+    }
+}
+.pExtend{
+    @extend .p--rojo;
+    font-size: smaller;
+}

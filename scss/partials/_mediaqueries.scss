@@ -135,6 +135,7 @@ p{
             margin: 3px;
         }
         .pawPatrol{
+            @include sizes (300px, 75px);
             border: 5px;
             border-style: dotted;
             border-color: indigo;

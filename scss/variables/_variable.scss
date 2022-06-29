@@ -1,0 +1,12 @@
+$tituloh1: grey;
+$parrafos:(
+    rojo: red,
+    amarillo: yellow,
+    azul: blue,
+);
+/* El mapa está en _home, abajo de todo junto con el extend*/
+@mixin sizes($width, $height){
+    height: $height;
+    width: $width;
+    }
+/* El mixin está en _mediaqueries, en la clase .pawpatrol */

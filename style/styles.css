@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* El mapa está en _home, abajo de todo junto con el extend*/
+/* El mixin está en _mediaqueries, en la clase .pawpatrol */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0%;
@@ -108,6 +110,18 @@ header {
     transform: translateX(100px); }
   80% {
     transform: translateY(50px); } }
+
+.p--rojo, .pExtend {
+  color: red; }
+
+.p--amarillo {
+  color: yellow; }
+
+.p--azul {
+  color: blue; }
+
+.pExtend {
+  font-size: smaller; }
 
 .listaJuguetes {
   background-color: aqua;
@@ -341,6 +355,8 @@ footer {
   p {
     margin: 3px; }
   .pawPatrol {
+    height: 75px;
+    width: 300px;
     border: 5px;
     border-style: dotted;
     border-color: indigo; }
