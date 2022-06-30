@@ -80,6 +80,10 @@ align-items: center;
         transform: translateY(50px);
     }
 }
+.p--rojo, .p--azul, .p--amarillo{
+    margin: 0%;
+    font-size:small;
+} 
 @each $parrafo, $color in $parrafos {
     .p--#{$parrafo}{
         color: $color;

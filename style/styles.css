@@ -111,6 +111,10 @@ header {
   80% {
     transform: translateY(50px); } }
 
+.p--rojo, .pExtend, .p--azul, .p--amarillo {
+  margin: 0%;
+  font-size: small; }
+
 .p--rojo, .pExtend {
   color: red; }
 
