@@ -225,13 +225,13 @@ header {
   flex-direction: column;
   align-items: center; }
 
-.listaOfertas {
+.listaCompras {
   background-color: aqua;
   padding: 20px;
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  grid-area: listaO;
+  grid-area: listaC;
   display: flex;
   flex-direction: column;
   align-items: center; }
