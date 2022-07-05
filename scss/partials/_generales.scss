@@ -3,15 +3,17 @@
     margin: 0%;
 }
 body{
-    background-color: brown;
+    background-color: #e76f51;
     padding: 10px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 ul, footer, ol, p, h1, h2, h3, h4, h5, section, div, li, nav, header, aside{
     font-family: 'Roboto', sans-serif;
+    color: #e3d5ca;
 }
 a{
     text-decoration: none;
+    color: #90e0ef;
     &:hover{
         background-color:darkorange;
     }
@@ -21,4 +23,9 @@ a{
     &visited{
         color: blueviolet;
     }
+}
+input{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
 }

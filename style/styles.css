@@ -1,20 +1,20 @@
 @charset "UTF-8";
-/* El mapa está en _home, abajo de todo junto con el extend*/
-/* El mixin está en _mediaqueries, en la clase .pawpatrol */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 * {
   padding: 0%;
   margin: 0%; }
 
 body {
-  background-color: brown;
+  background-color: #e76f51;
   padding: 10px; }
 
 ul, footer, ol, p, h1, h2, h3, h4, h5, section, div, li, nav, header, aside {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  color: #e3d5ca; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #90e0ef; }
   a:hover {
     background-color: darkorange; }
   a:active {
@@ -22,11 +22,16 @@ a {
   avisited {
     color: blueviolet; }
 
+input {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0; }
+
 nav li {
   display: inline-block; }
 
 header {
-  background-color: aqua;
+  background-color: #6a040f;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -35,6 +40,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  header a {
+    color: #fb8500;
+    font-size: large; }
 
 @media (max-width: 1000px) and (min-width: 700px) {
   .textoEspecifico {
@@ -44,21 +52,22 @@ header {
   font-size: larger; }
 
 .tituloBienvenida {
-  color: grey;
+  color: #76c893;
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: aquamarine;
+  background-color: #264653;
   grid-area: bienvenida;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 .fotoJuguetes {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: chartreuse;
+  background-color: #264653;
   grid-area: fotoJ;
   display: flex;
   flex-direction: column;
@@ -68,14 +77,14 @@ header {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: chartreuse;
+  background-color: #264653;
   grid-area: textoR; }
 
 .fotoMuñecas {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: chartreuse;
+  background-color: #264653;
   grid-area: fotoM;
   display: flex;
   flex-direction: column;
@@ -85,7 +94,7 @@ header {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: chartreuse;
+  background-color: #264653;
   grid-area: videoJ;
   display: flex;
   flex-direction: column;
@@ -94,14 +103,14 @@ header {
 .juguetes {
   transition: all 3s; }
   .juguetes:hover {
-    transform: scale(4); }
+    transform: scale(1.2); }
 
 .imagenPagina:hover {
   animation: imagenPagina 5s; }
 
 @keyframes imagenPagina {
   0% {
-    transform: scale(3); }
+    transform: scale(1.5); }
   20% {
     border-radius: 50%; }
   40% {
@@ -111,38 +120,21 @@ header {
   80% {
     transform: translateY(50px); } }
 
-.p--rojo, .pExtend, .p--azul, .p--amarillo {
-  margin: 0%;
-  font-size: small; }
-
-.p--rojo, .pExtend {
-  color: red; }
-
-.p--amarillo {
-  color: yellow; }
-
-.p--azul {
-  color: blue; }
-
-.pExtend {
-  font-size: smaller; }
-
 .listaJuguetes {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
   border-width: 10px;
   grid-area: listaJ;
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
 
 .formPadre {
   grid-area: formP; }
 
 .formularioNombre {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -153,7 +145,7 @@ header {
   align-items: center; }
 
 .formularioEmail {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -164,7 +156,7 @@ header {
   align-items: center; }
 
 .formularioConsulta {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -175,7 +167,7 @@ header {
   align-items: center; }
 
 .forumularioEdad {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -186,7 +178,7 @@ header {
   align-items: center; }
 
 .formularioJuguetes {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -197,7 +189,7 @@ header {
   align-items: center; }
 
 .formularioMarca {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -208,7 +200,7 @@ header {
   align-items: center; }
 
 .formularioNotificacion {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -219,7 +211,7 @@ header {
   align-items: center; }
 
 .formularioEnviar {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -230,7 +222,7 @@ header {
   align-items: center; }
 
 .listaCompras {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -241,7 +233,7 @@ header {
   align-items: center; }
 
 .listaOfertas {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -252,7 +244,7 @@ header {
   align-items: center; }
 
 .textoSN {
-  background-color: aqua;
+  background-color: #264653;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -261,12 +253,18 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .textoSN img {
+    max-width: 50%;
+    max-height: 50%;
+    border-radius: 20px;
+    border-color: #0077b6;
+    border-style: groove; }
 
 footer {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  background-color: wheat;
+  background-color: #6a040f;
   grid-area: footer;
   display: flex;
   flex-direction: row;
@@ -282,7 +280,8 @@ footer {
     max-width: 300px;
     max-height: 300px; }
   figcaption {
-    background-color: darkslategrey; }
+    color: #76c893;
+    font-size: x-large; }
   iframe {
     max-width: 400px;
     max-height: 300px; }
@@ -306,22 +305,22 @@ footer {
     display: grid;
     grid-template-areas: "header listaJ" "footer footer";
     grid-template-columns: 130px auto;
-    grid-template-rows: 500px auto; }
+    grid-template-rows: auto auto; }
   .bodyCompras {
     display: grid;
     grid-template-areas: "header listaC" "footer footer";
     grid-template-columns: 130px auto;
-    grid-template-rows: 500px auto; }
+    grid-template-rows: auto auto; }
   .bodyOfertas {
     display: grid;
     grid-template-areas: "header listaO" "footer footer";
     grid-template-columns: 130px auto;
-    grid-template-rows: 500px auto; }
+    grid-template-rows: auto auto; }
   .bodyNosotros {
     display: grid;
     grid-template-areas: "header textoSN" "footer footer";
     grid-template-columns: 130px auto;
-    grid-template-rows: 500px auto; } }
+    grid-template-rows: auto auto; } }
 
 @media (min-width: 600px) {
   .bodyInicio {
@@ -341,16 +340,16 @@ footer {
     grid-template-rows: auto; }
   .bodyCategorías {
     grid-template-columns: 140px auto;
-    grid-template-rows: 600px auto; }
+    grid-template-rows: auto auto; }
   .bodyCompras {
     grid-template-columns: 140px auto;
-    grid-template-rows: 600px auto; }
+    grid-template-rows: auto auto; }
   .bodyOfertas {
     grid-template-columns: 140px auto;
-    grid-template-rows: 600px auto; }
+    grid-template-rows: auto auto; }
   .bodyNosotros {
     grid-template-columns: 140px auto;
-    grid-template-rows: 600px auto; } }
+    grid-template-rows: auto auto; } }
 
 @media (min-width: 1024px) {
   .bodyInicio {
@@ -360,10 +359,7 @@ footer {
     margin: 3px; }
   .pawPatrol {
     height: 75px;
-    width: 300px;
-    border: 5px;
-    border-style: dotted;
-    border-color: indigo; }
+    width: 300px; }
   .formPadre {
     grid-template-columns: 150px auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
@@ -372,13 +368,13 @@ footer {
     grid-template-rows: auto; }
   .bodyCategorías {
     grid-template-columns: 150px auto;
-    grid-template-rows: 800px auto; }
+    grid-template-rows: auto auto; }
   .bodyCompras {
     grid-template-columns: 150px auto;
-    grid-template-rows: 800px auto; }
+    grid-template-rows: auto auto; }
   .bodyOfertas {
     grid-template-columns: 150px auto;
-    grid-template-rows: 800px auto; }
+    grid-template-rows: auto auto; }
   .bodyNosotros {
     grid-template-columns: 150px auto;
-    grid-template-rows: 800px auto; } }
+    grid-template-rows: auto auto; } }

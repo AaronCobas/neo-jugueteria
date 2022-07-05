@@ -4,7 +4,7 @@ nav{
     }
     }
 header{
-        background-color: aqua;
+        background-color: #6a040f;
         padding: 20px;
         border-style: solid;
         border-color: black;
@@ -13,4 +13,8 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        a{
+            color: #fb8500;
+            font-size: large;
+        }
     }

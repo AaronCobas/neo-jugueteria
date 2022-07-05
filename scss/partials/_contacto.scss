@@ -2,7 +2,7 @@
     grid-area: formP;
 }
 .formularioNombre{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -13,7 +13,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioEmail{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -24,7 +24,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioConsulta{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -35,7 +35,7 @@ flex-direction: column;
 align-items: center;
 }
 .forumularioEdad{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -46,7 +46,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioJuguetes{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -57,7 +57,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioMarca{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -68,7 +68,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioNotificacion{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
@@ -79,7 +79,7 @@ flex-direction: column;
 align-items: center;
 }
 .formularioEnviar{
-    background-color: aqua;
+    background-color: $fondo;
     padding: 20px;
     border-style: solid;
     border-color: black;
