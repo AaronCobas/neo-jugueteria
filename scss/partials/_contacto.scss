@@ -4,9 +4,6 @@
 .formularioNombre{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formNombre;
     display: flex;
 flex-direction: column;
@@ -15,9 +12,6 @@ align-items: center;
 .formularioEmail{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formEmail;
     display: flex;
 flex-direction: column;
@@ -26,9 +20,6 @@ align-items: center;
 .formularioConsulta{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formConsulta;
     display: flex;
 flex-direction: column;
@@ -37,9 +28,6 @@ align-items: center;
 .forumularioEdad{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formEdad;
     display: flex;
 flex-direction: column;
@@ -48,9 +36,6 @@ align-items: center;
 .formularioJuguetes{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formJuguetes;
     display: flex;
 flex-direction: column;
@@ -59,9 +44,6 @@ align-items: center;
 .formularioMarca{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formMarca;
     display: flex;
 flex-direction: column;
@@ -70,9 +52,6 @@ align-items: center;
 .formularioNotificacion{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formNotif;
     display: flex;
 flex-direction: column;
@@ -81,9 +60,6 @@ align-items: center;
 .formularioEnviar{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: formEnviar;
     display: flex;
 flex-direction: column;

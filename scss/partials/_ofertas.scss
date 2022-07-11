@@ -1,11 +1,13 @@
 .listaOfertas{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: listaO;
     display: flex;
     flex-direction: column;
     align-items: center;
+    img{
+        border-radius: 20px;
+        border-color: $bordeimg;
+        border-style:groove;
+    }
 }

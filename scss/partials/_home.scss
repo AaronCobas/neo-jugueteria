@@ -3,14 +3,8 @@
         color: green;
     }
 }
-.textoEspecifico{
-    font-size: larger;
-}
 .tituloBienvenida{
     color: $titulo;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     background-color: $fondo;
     grid-area: bienvenida;
     display: flex;
@@ -19,9 +13,6 @@
     align-items: center;
 }
 .fotoJuguetes{
-border-style: solid;
-border-color: black;
-border-width: 10px;
 background-color: $fondo;
 grid-area: fotoJ;
 display: flex;
@@ -29,16 +20,10 @@ flex-direction: column;
 align-items: center;
 }
 .textoRelleno{
-    border-style: solid;
-border-color: black;
-border-width: 10px;
 background-color: $fondo;
 grid-area: textoR;
 }
 .fotoMuñecas{
-    border-style: solid;
-border-color: black;
-border-width: 10px;
 background-color: $fondo;
 grid-area: fotoM;
 display: flex;
@@ -46,9 +31,6 @@ flex-direction: column;
 align-items: center;
 }
 .videoJuguetes{
-    border-style: solid;
-border-color: black;
-border-width: 10px;
 background-color: $fondo;
 grid-area: videoJ;
 display: flex;

@@ -1,18 +1,14 @@
 .textoSN{
     background-color: $fondo;
     padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-width: 10px;
     grid-area: textoSN;
     display: flex;
     flex-direction: column;
     align-items: center;
     img{
-        max-width: 50%;
-        max-height: 50%;
+        @include max-sizes (50%, 50%);
         border-radius: 20px;
-        border-color: #0077b6;
+        border-color: $bordeimg;
         border-style:groove;
     }
 }

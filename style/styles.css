@@ -5,8 +5,7 @@
   margin: 0%; }
 
 body {
-  background-color: #e76f51;
-  padding: 10px; }
+  background-color: #e76f51; }
 
 ul, footer, ol, p, h1, h2, h3, h4, h5, section, div, li, nav, header, aside {
   font-family: 'Roboto', sans-serif;
@@ -27,6 +26,9 @@ input {
   padding: 12px 20px;
   margin: 8px 0; }
 
+.highlight {
+  color: #ffc8dd; }
+
 nav li {
   display: inline-block; }
 
@@ -41,21 +43,15 @@ header {
   flex-direction: column;
   justify-content: center; }
   header a {
-    color: #fb8500;
+    color: #bde0fe;
     font-size: large; }
 
 @media (max-width: 1000px) and (min-width: 700px) {
   .textoEspecifico {
     color: green; } }
 
-.textoEspecifico {
-  font-size: larger; }
-
 .tituloBienvenida {
   color: #76c893;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   background-color: #264653;
   grid-area: bienvenida;
   display: flex;
@@ -64,9 +60,6 @@ header {
   align-items: center; }
 
 .fotoJuguetes {
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   background-color: #264653;
   grid-area: fotoJ;
   display: flex;
@@ -74,16 +67,10 @@ header {
   align-items: center; }
 
 .textoRelleno {
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   background-color: #264653;
   grid-area: textoR; }
 
 .fotoMuñecas {
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   background-color: #264653;
   grid-area: fotoM;
   display: flex;
@@ -91,9 +78,6 @@ header {
   align-items: center; }
 
 .videoJuguetes {
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   background-color: #264653;
   grid-area: videoJ;
   display: flex;
@@ -123,12 +107,14 @@ header {
 .listaJuguetes {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: listaJ;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
+  .listaJuguetes img {
+    border-radius: 20px;
+    border-color: #0077b6;
+    border-style: groove; }
 
 .formPadre {
   grid-area: formP; }
@@ -136,9 +122,6 @@ header {
 .formularioNombre {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formNombre;
   display: flex;
   flex-direction: column;
@@ -147,9 +130,6 @@ header {
 .formularioEmail {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formEmail;
   display: flex;
   flex-direction: column;
@@ -158,9 +138,6 @@ header {
 .formularioConsulta {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formConsulta;
   display: flex;
   flex-direction: column;
@@ -169,9 +146,6 @@ header {
 .forumularioEdad {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formEdad;
   display: flex;
   flex-direction: column;
@@ -180,9 +154,6 @@ header {
 .formularioJuguetes {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formJuguetes;
   display: flex;
   flex-direction: column;
@@ -191,9 +162,6 @@ header {
 .formularioMarca {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formMarca;
   display: flex;
   flex-direction: column;
@@ -202,9 +170,6 @@ header {
 .formularioNotificacion {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formNotif;
   display: flex;
   flex-direction: column;
@@ -213,9 +178,6 @@ header {
 .formularioEnviar {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: formEnviar;
   display: flex;
   flex-direction: column;
@@ -224,31 +186,30 @@ header {
 .listaCompras {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: listaC;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .listaCompras img {
+    border-radius: 20px;
+    border-color: #0077b6;
+    border-style: groove; }
 
 .listaOfertas {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: listaO;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .listaOfertas img {
+    border-radius: 20px;
+    border-color: #0077b6;
+    border-style: groove; }
 
 .textoSN {
   background-color: #264653;
   padding: 20px;
-  border-style: solid;
-  border-color: black;
-  border-width: 10px;
   grid-area: textoSN;
   display: flex;
   flex-direction: column;
@@ -327,8 +288,8 @@ footer {
     grid-template-columns: 150px 235px 235px;
     grid-template-rows: 200px 200px 200px 175px 175px 200px 200px 200px 200px auto; }
   .imagenPagina, .juguetes {
-    border: 20px;
-    border-color: aqua;
+    border-radius: 20px;
+    border-color: #0077b6;
     border-style: groove; }
   p {
     margin: 5px; }
@@ -359,7 +320,7 @@ footer {
     margin: 3px; }
   .pawPatrol {
     height: 75px;
-    width: 300px; }
+    width: 500px; }
   .formPadre {
     grid-template-columns: 150px auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }

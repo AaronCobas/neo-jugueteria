@@ -95,9 +95,9 @@ p{
         grid-template-rows: 200px 200px 200px 175px 175px 200px 200px 200px 200px auto;
     }
     .imagenPagina,.juguetes{
-        border: 20px;
-        border-color: aqua;
-        border-style: groove;
+        border-radius: 20px;
+        border-color: $bordeimg;
+        border-style:groove;
     }
     p{
         margin: 5px;
@@ -136,7 +136,7 @@ p{
             margin: 3px;
         }
         .pawPatrol{
-            @include sizes (300px, 75px);
+            @include sizes (500px, 75px);
         }
         .formPadre{
             grid-template-columns: 150px auto;

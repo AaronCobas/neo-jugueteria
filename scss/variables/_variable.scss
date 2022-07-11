@@ -1,6 +1,12 @@
 $titulo: #76c893;
 $fondo: #264653;
+$bordeimg: #0077b6;
+$highlight: #ffc8dd;
 @mixin sizes($width, $height){
     height: $height;
     width: $width;
     }
+@mixin max-sizes($max-width, $max-height){
+    max-width: $max-width;
+    max-height: $max-height;
+}
