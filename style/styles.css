@@ -38,10 +38,7 @@ header {
   border-style: solid;
   border-color: black;
   border-width: 10px;
-  grid-area: header;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  grid-area: header; }
   header a {
     color: #bde0fe;
     font-size: large; }
@@ -215,8 +212,6 @@ header {
   flex-direction: column;
   align-items: center; }
   .textoSN img {
-    max-width: 50%;
-    max-height: 50%;
     border-radius: 20px;
     border-color: #0077b6;
     border-style: groove; }
@@ -234,9 +229,11 @@ footer {
 @media (min-width: 300px) {
   .bodyInicio {
     display: grid;
-    grid-template-areas: "header bienvenida bienvenida" "header fotoJ fotoJ" "header fotoJ fotoJ" "header textoR textoR" "header textoR textoR" "fotoM fotoM fotoM" "fotoM fotoM fotoM" "videoJ videoJ videoJ" "videoJ videoJ videoJ" "footer footer footer";
+    grid-template-areas: "header bienvenida bienvenida" "header fotoJ fotoJ" "header fotoJ fotoJ" "header textoR textoR" "header textoR textoR" "header fotoM fotoM" "header fotoM fotoM" "header videoJ videoJ" "header videoJ videoJ" "footer footer footer";
     grid-template-columns: 130px auto auto;
     grid-template-rows: 200px 200px 200px 300px 300px 200px 200px 200px 200px auto; }
+  nav li {
+    padding: 0 0 20px 0; }
   img {
     max-width: 300px;
     max-height: 300px; }
@@ -255,8 +252,8 @@ footer {
   .formPadre {
     display: grid;
     grid-template-areas: "formNombre formNombre" "formEmail formEmail" "formConsulta formConsulta" "formEdad formEdad" "formMarca formJuguetes" "formNotif formNotif" "formEnviar formEnviar";
-    grid-template-columns: 175px 175px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+    grid-template-columns: auto;
+    grid-template-rows: auto; }
   .bodyContacto {
     display: grid;
     grid-template-areas: "header formP" "footer footer";
@@ -280,12 +277,12 @@ footer {
   .bodyNosotros {
     display: grid;
     grid-template-areas: "header textoSN" "footer footer";
-    grid-template-columns: 130px auto;
+    grid-template-columns: auto auto;
     grid-template-rows: auto auto; } }
 
 @media (min-width: 600px) {
   .bodyInicio {
-    grid-template-columns: 150px 235px 235px;
+    grid-template-columns: 150px auto auto;
     grid-template-rows: 200px 200px 200px 175px 175px 200px 200px 200px 200px auto; }
   .imagenPagina, .juguetes {
     border-radius: 20px;
@@ -314,8 +311,14 @@ footer {
 
 @media (min-width: 1024px) {
   .bodyInicio {
+    display: grid;
+    grid-template-areas: "header header header" "bienvenida bienvenida bienvenida" "fotoJ fotoJ fotoJ" "fotoJ fotoJ fotoJ" "textoR textoR textoR" "textoR textoR textoR" "fotoM fotoM fotoM" "fotoM fotoM fotoM" "videoJ videoJ videoJ" "videoJ videoJ videoJ" "footer footer footer";
     grid-template-columns: 150px 1fr 1fr;
-    grid-template-rows: 200px 200px 200px 100px 100px 200px 200px 200px 200px auto; }
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto; }
+  nav li {
+    padding: 0 20px; }
+  div {
+    padding: 20px; }
   p {
     margin: 3px; }
   .pawPatrol {
@@ -325,17 +328,22 @@ footer {
     grid-template-columns: 150px auto;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
   .bodyContacto {
+    grid-template-areas: "header header" "formP  formP" "footer footer";
     grid-template-columns: 150px auto;
     grid-template-rows: auto; }
   .bodyCategorías {
+    grid-template-areas: "header header" "listaJ listaJ" "footer footer";
     grid-template-columns: 150px auto;
     grid-template-rows: auto auto; }
   .bodyCompras {
+    grid-template-areas: "header header" "listaC listaC" "footer footer";
     grid-template-columns: 150px auto;
     grid-template-rows: auto auto; }
   .bodyOfertas {
+    grid-template-areas: "header header" "listaO listaO" "footer footer";
     grid-template-columns: 150px auto;
     grid-template-rows: auto auto; }
   .bodyNosotros {
+    grid-template-areas: "header header" "textoSN textoSN" "footer footer";
     grid-template-columns: 150px auto;
     grid-template-rows: auto auto; } }
