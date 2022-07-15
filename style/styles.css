@@ -231,11 +231,11 @@ footer {
   flex-direction: row;
   justify-content: flex-start; }
 
-@media (min-width: 480px) {
+@media (min-width: 300px) {
   .bodyInicio {
     display: grid;
     grid-template-areas: "header bienvenida bienvenida" "header fotoJ fotoJ" "header fotoJ fotoJ" "header textoR textoR" "header textoR textoR" "fotoM fotoM fotoM" "fotoM fotoM fotoM" "videoJ videoJ videoJ" "videoJ videoJ videoJ" "footer footer footer";
-    grid-template-columns: 130px 175px 175px;
+    grid-template-columns: 130px auto auto;
     grid-template-rows: 200px 200px 200px 300px 300px 200px 200px 200px 200px auto; }
   img {
     max-width: 300px;
