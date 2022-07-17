@@ -52,7 +52,6 @@ header {
   background-color: #264653;
   grid-area: bienvenida;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center; }
 
@@ -231,7 +230,7 @@ footer {
     display: grid;
     grid-template-areas: "header bienvenida bienvenida" "header fotoJ fotoJ" "header fotoJ fotoJ" "header textoR textoR" "header textoR textoR" "header fotoM fotoM" "header fotoM fotoM" "header videoJ videoJ" "header videoJ videoJ" "footer footer footer";
     grid-template-columns: 130px auto auto;
-    grid-template-rows: 200px 200px 200px 300px 300px 200px 200px 200px 200px auto; }
+    grid-template-rows: 200px auto; }
   nav li {
     padding: 0 0 20px 0; }
   img {
